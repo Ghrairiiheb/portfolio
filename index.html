@@ -1,205 +1,382 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iheb ghrairi</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/ccc90c6952.js" crossorigin="anonymous"></script>
+  <title>Iheb Ghrairi - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-<div id="header">
-  <div class="container">
-    <nav>
-      <h1 style="font-size: 40px;width: 140px;"><span style="color:#ff004f;">I</span>heb.</h1>
-      
-      <ul>
-        <li><a href="#header">Home</a></li>    
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-
-      </ul>
-    </nav>
-    <div class="header-text">
-      <p>Web/Mobile Developer</p>
-      <h1>Hi, I'm <span>Iheb</span>Ghrairi<br>From Tunisia</h1>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">Iheb Ghrairi</div>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link">Accueil</a>
+        <a href="#about" class="nav-link">À propos</a>
+        <a href="#projects" class="nav-link">Projets</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="nav-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-  </div>
-</div> 
-<!-------------------about-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
- <div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="user.png">
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">About Me </h1>
-        <p>
-          As a web and mobile developer, I focus on building dynamic, high-performance applications that meet the needs of modern businesses. I specialize in creating responsive websites and mobile apps that provide a smooth, intuitive user experience. My technical expertise spans a wide range of tools, including PHP, JavaScript, and frameworks like Symfony and Angular for robust front-end and back-end development. Additionally, I utilize Odoo to offer customized business management solutions, integrating its modules to automate processes and enhance operational efficiency. By combining my skills in web/mobile development with Odoo’s powerful platform, I deliver end-to-end solutions that help businesses grow and thrive in the digital landscape.
-        </p>
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links"onclick="opentab('experience')">Experience</p>
-          <p class="tab-links"onclick="opentab('education')">Education</p>
-        </div>
-        <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li><span>Web Development</span><br>-HTML, CSS, JavaScript<br>
-              -PHP<br>
-              -python <br>
-              -java
-            
-            </span></li>
-            <li><span>Mobile Development</span><br>-Flutter<br>
-              -Dart<br>
-              -Mobile-Responsive Web Apps<br>
-              -Progressive Web Apps (PWA)<br>
-              -Cross-Platform Development</span></li>
-            <li><span>Business Management Solutions</span><br>-Odoo Development<br>
-              -Odoo Customization and Integration<br>
-              -Odoo Module Configuration (CRM, HR, Finance, etc.)</span></li>
-
-
-          </ul>
-        </div>
-        <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>2023-2024</span><br>It And Data Manager at Dcs  </span></li>
-          
-
-
-          </ul>
-        </div>
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>2021 - Present</span><br>Engineering Degree in Software<br>At Engineering
-              Private Higher School of Engineering and Technology (ESSAT), Gabès<br>
-              
-              Currently a 3rd-year engineering student specializing in software engineering.<br>
-              Completed various academic and personal projects in web development, mobile development, and data management.
-              </span></li>
-          
-
-
-          </ul>
-        </div>
-      </div>
+    <div class="nav-mobile" id="mobile-nav">
+      <a href="#home" class="nav-link-mobile">Accueil</a>
+      <a href="#about" class="nav-link-mobile">À propos</a>
+      <a href="#projects" class="nav-link-mobile">Projets</a>
+      <a href="#contact" class="nav-link-mobile">Contact</a>
     </div>
-  </div>
- </div>
- <!-------------------services-------------------->
- <div id="services">
-  <div class="container">
-    <h1 class="sub-title">My Services </h1>
-    <div class="services-list">
-      <div>
-        <i class="fa-solid fa-code"></i>
-        <h2>Web Development</h2>
-        <p>Developing comprehensive web applications using the MERN (MongoDB, Express.js, React, Node.js) stack. Leveraging MongoDB for flexible and scalable database management, React for dynamic and responsive user interfaces, and Node.js for efficient server-side JavaScript runtime. Responsibilities include designing and implementing RESTful APIs, creating interactive front-end components and ensuring seamless data flow between client and server. The work involves building scalable, high-performance single-page applications that provide rich user experiences and efficient data handling across the full stack</p>
-        
+  </nav>
 
-
-      </div>
-      
-      <div>
-        <i class="fa-brands fa-app-store"></i>
-        <h2>mobile App Development</h2>
-        <p>
-          Mobile app development involves creating software applications designed to run on mobile devices, such as smartphones and tablets. This process typically includes various stages, such as conceptualization, designing the user interface (UI), programming, testing, and deployment. Developers use programming languages like Swift for iOS, Kotlin or Java for Android, and frameworks like Flutter (Dart) or React Native for cross-platform development. The goal is to build apps that offer seamless user experiences, high performance, and meet specific business or consumer needs. Additionally, mobile apps must consider aspects like security, scalability, and regular updates to stay relevant in an ever-evolving digital landscape.</p>
-        
-        
-
-      </div>
-    </div>
-  </div>
- </div>
- <!-------------------portfolio-------------------->
- <div id="portfolio">
-  <div class="container">
-    <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="work-1.png" >
-        <div class="layer">
-          <h3>Expense Tracker App</h3>
-          <p>Spendy is a user-friendly mobile app designed to help individuals track their expenses, manage budgets, and achieve financial goals efficiently.
-          </p>
-          <a href="project1.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="work"><img src="work-2.png" >
-        <div class="layer">
-          <h3>Leave Management App</h3>
-          <p> Designed to streamline the process of managing employee time off</p>
-          <a href="project2.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        
-      </div>
-      <div class="work"><img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2l0ZSUyMGludGVybmV0fGVufDB8fDB8fHww" >
-        <div class="layer">
-          <h3>Student Management System </h3>
-          <p> A complete web system designed to manage student information, including registration, data updates, and profile consultations, tailored for educational institutions.
-
- </p>
-          <a href="projectt.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        
-      </div>
-    </div>
-    <a href="#" class="btn">See more</a>
-  </div>
- </div>
-  <!-------------------contact--------------------------------------------------------------------------->
-  <div id="contact">
+  <!-- Hero Section -->
+  <section id="home" class="hero">
     <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title"> Contact Me</h1>
-          <p><i class="fa-solid fa-paper-plane"></i>ihebghrarii@gmail.com</p>
-          <p><i class="fa-solid fa-phone"></i>+21650314880</p>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/iheb.ghrairi.5"><i class="fa-brands fa-facebook"></i></a>
-            <a herf="https://www.linkedin.com/in/ghrairi-iheb-gl/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Ghrairiiheb"><i class="fa-brands fa-github"></i></a>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Salut, je suis <span class="text-accent">Iheb Ghrairi</span>
+          </h1>
+          <p class="hero-subtitle">
+            Développeur Full Stack passionné par la création d'applications web modernes et performantes
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" id="download-cv">
+              <i class="fas fa-download"></i>
+              Télécharger CV
+            </button>
+            <a class="btn btn-outline" href="#projects">
+              Voir mes projets
+            </a>
           </div>
-          <a href="Ghrairi-Iheb-cv.pdf" download class="btn btn2">Download Cv</a>
+          <div class="social-links">
+            <a href="https://github.com/Ghrairiiheb" class="social-link" target="_blank"><i
+                class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/iheb-ghrairi-ab690b286/" class="social-link" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
         </div>
-        <div class="contact-right">
-          <form>
-            <input type="text" name="Name" placeholder="Your Name"required >
-            <input type="email" name="Email" placeholder="Your Email"required >
-            <textarea name="Message" rows="6" placeholder="Your Message"required ></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
+        <div class="hero-image">
+          <div class="image-container">
+            <div class="image-bg"></div>
+            <img src="images/me.png" alt="Iheb Ghrairi" class="profile-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          </form>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">À propos de moi</h2>
+        <p class="section-subtitle">
+          Développeur passionné avec plus de 3 ans d'expérience dans le développement web et mobile
+        </p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-paragraph">
+            Je suis un développeur full stack spécialisé dans les technologies modernes comme React, Node.js et
+            Python. J'aime créer des solutions innovantes qui résolvent des problèmes réels et améliorent
+            l'expérience utilisateur.
+          </p>
+          <p class="about-paragraph">
+            Mon approche combine créativité et rigueur technique pour livrer des applications performantes,
+            scalables et maintenables. Je suis toujours à la recherche de nouveaux défis et opportunités
+            d'apprentissage.
+          </p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Tunis, Tunisie</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+216 50 314 880</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>ihebghrarii@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-section">
+          <h3 class="skills-title">Compétences</h3>
+          <div class="skills-grid">
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">TypeScript</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Vue.js</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">MongoDB</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">AWS</span>
+            <span class="skill-badge">Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mes Projets</h2>
+        <p class="section-subtitle">
+          Découvrez quelques-uns de mes projets récents qui démontrent mes compétences et ma passion pour le
+          développement
+        </p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Système ERP -->
+        <div class="project-card" data-project="erp-system">
+          <div class="project-image">
+            <img src="images/eroop.jpg" alt="Système ERP">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Système ERP</h3>
+            <p class="project-description">
+              Développement d'un système ERP basé sur Odoo pour une organisation culturelle, intégrant la gestion des
+              membres, des projets et des événements.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-badge">Odoo</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary" data-action="demo"><i class="fas fa-external-link-alt"></i>
+                Explorer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Activiste -->
+        <div class="project-card" data-project="blog-activiste">
+          <div class="project-image">
+            <img src="images/act.png" alt="Blog Activiste Culturel">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Blog Activiste Culturel</h3>
+            <p class="project-description">
+              Création d'un blog moderne pour promouvoir les initiatives culturelles et artistiques d'un activiste
+              tunisien.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">Markdown</span>
+              <span class="tech-badge">Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary" data-action="demo"><i class="fas fa-external-link-alt"></i>
+                Explorer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Générateur de Contrats -->
+        <div class="project-card" data-project="generateur-contrats">
+          <div class="project-image">
+            <img src="images/genn.jpg" alt="Générateur de Contrats">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Générateur de Contrats</h3>
+            <p class="project-description">
+              Application web automatisée pour générer des contrats juridiques personnalisés à partir de modèles
+              dynamiques.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">HTML/PDF</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary" data-action="demo"><i class="fas fa-external-link-alt"></i>
+                Explorer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plateforme Éducative -->
+        <div class="project-card" data-project="plateforme-educative">
+          <div class="project-image">
+            <img src="images/plat.png" alt="Plateforme Éducative">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Site Web </h3>
+            <p class="project-description">
+              Plateforme web multiplateforme destinée à une société civile, offrant la publication de leurs actualités
+              ainsi que la présentation de leurs nouveaux projets. </p> .
+            <div class="project-technologies">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Socket.io</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary" data-action="demo"><i class="fas fa-external-link-alt"></i>
+                Explorer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Application de Suivi de Dépenses -->
+        <div class="project-card" data-project="suivi-depenses">
+          <div class="project-image">
+            <img src="images/d.jpg" alt="Application de Suivi de Dépenses">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Cine+ / Application(Web/mobile) de vente et de réservation de tickets de cinéma</h3>
+            <p class="project-description">
+             Cine+ est une application intuitive permettant aux utilisateurs de consulter les films disponibles à l'affiche, de réserver leurs places au cinéma et d’acheter des tickets en ligne.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Dart</span>
+              <span class="tech-badge">Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary" data-action="demo"><i class="fas fa-external-link-alt"></i>
+                Explorer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plateforme Étudiante -->
+        <div class="project-card" data-project="student-platform">
+          <div class="project-image">
+            <img src="images/st.jpg" alt="Plateforme Étudiante">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Plateforme Étudiante</h3>
+            <p class="project-description">
+              Plateforme complète pour la gestion des étudiants et cours universitaires avec fonctionnalités avancées de
+              communication.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-badge">Vue.js</span>
+              <span class="tech-badge">Laravel</span>
+              <span class="tech-badge">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary" data-action="demo"><i class="fas fa-external-link-alt"></i>
+                Explorer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Planner -->
+        <div class="project-card" data-project="project-planner">
+          <div class="project-image">
+            <img src="images/project-planner.jpg" alt="Project Planner">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Project Planner</h3>
+            <p class="project-description">
+              Outil avancé de planification et gestion de projets avec collaboration en équipe en temps réel et suivi
+              détaillé des tâches.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-badge">Angular</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary" data-action="demo"><i class="fas fa-external-link-alt"></i>
+                Explorer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Landing Page -->
+        <div class="project-card" data-project="Landing-Page">
+          <div class="project-image">
+            <img src="images/vente en ligne.jpg" alt="Landing Page - Vente de Cours en Ligne">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Landing Page - The Bridge</h3>
+            <p class="project-description">
+              Solution e-commerce complète sous forme de landing page, dédiée à la vente de cours en développement web
+              et mobile.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Stripe</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary" data-action="demo"><i class="fas fa-external-link-alt"></i>
+                Explorer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- IA Générateur -->
+        <div class="project-card" data-project="ia-generateur">
+          <div class="project-image">
+            <img src="images/ia systteme.jpg" alt="IA - Générateur de Contenu">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">IA - Générateur de Contenu</h3>
+            <p class="project-description">
+              Générateur intelligent de publications pour réseaux sociaux alimenté par l'IA, optimisant la création de
+              contenu marketing.
+            </p>
+            <div class="project-technologies">
+              <span class="tech-badge">OpenAI API</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Django</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link primary" data-action="demo"><i class="fas fa-external-link-alt"></i>
+                Explorer</a>
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
-    <div class="copyright">
-      <p>&copy; 2024 All rights reserved | This template is made by Iheb  </p>
-    </div>
-  </div>
+  </section>
 
- <script>
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
-  function opentab(tabname){
-    for(tablink of tablinks){
-      tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-      tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-  }
- </script>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <h2 class="section-title">Travaillons ensemble</h2>
+        <p class="section-subtitle">
+          Vous avez un projet en tête ? N'hésitez pas à me contacter pour discuter de vos besoins et voir comment je
+          peux vous aider.
+        </p>
+        <div class="contact-buttons">
+          <button class="btn btn-primary" id="contact-btn">
+            <i class="fas fa-envelope"></i>
+            Me contacter
+          </button>
+          <button class="btn btn-outline" id="download-cv-footer">
+            <i class="fas fa-download"></i>
+            Télécharger CV
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2025 Iheb Ghrairi. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
